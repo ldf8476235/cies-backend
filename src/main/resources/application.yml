@@ -49,4 +49,8 @@ mybatis-plus:
     cache-enabled: false
     call-setters-on-nulls: true
     jdbc-type-for-null: 'null'
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    log-prefix: mybatis-sql.
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#log配置
+logging:
+  config: classpath:log/logback.xml

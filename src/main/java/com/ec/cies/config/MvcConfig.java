@@ -8,12 +8,21 @@
 
 package com.ec.cies.config;
 
+import com.ec.cies.service.TokenService;
+import com.ec.cies.utils.interceptor.TokenVerify;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+
 @Configuration
-public class CorsConfig implements WebMvcConfigurer {
+public class MvcConfig implements WebMvcConfigurer {
+
+    @Autowired
+    private TokenVerify tokenVerify;
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
@@ -22,5 +31,10 @@ public class CorsConfig implements WebMvcConfigurer {
             .allowCredentials(true)
             .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
             .maxAge(3600);
+    }
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(tokenVerify).addPathPatterns("/**").excludePathPatterns("/login");
     }
 }

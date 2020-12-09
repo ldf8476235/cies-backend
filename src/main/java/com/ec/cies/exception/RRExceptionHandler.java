@@ -33,7 +33,6 @@ public class RRExceptionHandler {
 		R r = new R();
 		r.put("code", e.getCode());
 		r.put("msg", e.getMessage());
-
 		return r;
 	}
 

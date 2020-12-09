@@ -1,0 +1,1198 @@
+2020-12-09 10:07:11,753 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:07:11,897 ERROR (RRExceptionHandler.java:59)- null
+java.lang.NullPointerException: null
+	at com.auth0.jwt.TokenUtils.splitToken(TokenUtils.java:15)
+	at com.auth0.jwt.JWTDecoder.<init>(JWTDecoder.java:27)
+	at com.auth0.jwt.JWT.decode(JWT.java:21)
+	at com.ec.cies.utils.TokenUtils.getTokenUserName(TokenUtils.java:19)
+	at com.ec.cies.aspect.SysLogAspect.around(SysLogAspect.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.ec.cies.controller.DeviceController$$EnhancerBySpringCGLIB$$62317875.list(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-09 10:10:22,151 INFO (LoginController.java:41)- 用户(test1)已登录
+2020-12-09 10:10:43,457 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:10:43,463 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:10:43,463 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:10:43,463 INFO (SysLogAspect.java:43)- 请求地址:/cies/device/list
+2020-12-09 10:10:43,464 INFO (SysLogAspect.java:47)- 接口功能描述:获取设备列表
+2020-12-09 10:10:43,467 INFO (SysLogAspect.java:51)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:10:43,512 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@befb485}
+2020-12-09 10:10:43,513 INFO (SysLogAspect.java:64)- <---------End(44ms)--------->
+2020-12-09 10:10:44,723 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:10:44,726 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:10:44,727 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:10:44,729 INFO (SysLogAspect.java:43)- 请求地址:/cies/device/list
+2020-12-09 10:10:44,729 INFO (SysLogAspect.java:47)- 接口功能描述:获取设备列表
+2020-12-09 10:10:44,730 INFO (SysLogAspect.java:51)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:10:44,753 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@6d1eeef8}
+2020-12-09 10:10:44,753 INFO (SysLogAspect.java:64)- <---------End(23ms)--------->
+2020-12-09 10:11:01,592 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:11:01,594 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:11:01,594 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:11:01,594 INFO (SysLogAspect.java:43)- 请求地址:/cies/role/list
+2020-12-09 10:11:01,594 INFO (SysLogAspect.java:47)- 接口功能描述:获取角色列表
+2020-12-09 10:11:01,595 INFO (SysLogAspect.java:51)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:11:01,661 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@48b7c996}
+2020-12-09 10:11:01,661 INFO (SysLogAspect.java:64)- <---------End(66ms)--------->
+2020-12-09 10:11:04,296 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:11:04,297 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:11:04,298 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:11:04,298 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:11:04,298 INFO (SysLogAspect.java:43)- 请求地址:/cies/role/list
+2020-12-09 10:11:04,299 INFO (SysLogAspect.java:47)- 接口功能描述:获取角色列表
+2020-12-09 10:11:04,299 INFO (SysLogAspect.java:51)- 请求参数:[{}]
+2020-12-09 10:11:04,299 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:11:04,299 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:11:04,299 INFO (SysLogAspect.java:43)- 请求地址:/cies/user/list
+2020-12-09 10:11:04,299 INFO (SysLogAspect.java:47)- 接口功能描述:获取用户列表
+2020-12-09 10:11:04,300 INFO (SysLogAspect.java:51)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:11:04,312 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@2af50aec}
+2020-12-09 10:11:04,312 INFO (SysLogAspect.java:64)- <---------End(13ms)--------->
+2020-12-09 10:11:04,339 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@308a6965}
+2020-12-09 10:11:04,339 INFO (SysLogAspect.java:64)- <---------End(39ms)--------->
+2020-12-09 10:11:18,893 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:11:18,895 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:11:18,895 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:11:18,895 INFO (SysLogAspect.java:43)- 请求地址:/cies/role/list
+2020-12-09 10:11:18,895 INFO (SysLogAspect.java:47)- 接口功能描述:获取角色列表
+2020-12-09 10:11:18,896 INFO (SysLogAspect.java:51)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:11:18,907 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@7604ba31}
+2020-12-09 10:11:18,908 INFO (SysLogAspect.java:64)- <---------End(11ms)--------->
+2020-12-09 10:11:21,967 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:11:21,968 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:11:21,969 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:11:21,969 INFO (SysLogAspect.java:43)- 请求地址:/cies/role/list
+2020-12-09 10:11:21,969 INFO (SysLogAspect.java:47)- 接口功能描述:获取角色列表
+2020-12-09 10:11:21,969 INFO (SysLogAspect.java:51)- 请求参数:[{}]
+2020-12-09 10:11:21,970 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:11:21,971 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:11:21,971 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:11:21,971 INFO (SysLogAspect.java:43)- 请求地址:/cies/user/list
+2020-12-09 10:11:21,971 INFO (SysLogAspect.java:47)- 接口功能描述:获取用户列表
+2020-12-09 10:11:21,972 INFO (SysLogAspect.java:51)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:11:21,984 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@3f5c18ad}
+2020-12-09 10:11:21,984 INFO (SysLogAspect.java:64)- <---------End(15ms)--------->
+2020-12-09 10:11:22,007 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@5d36dee4}
+2020-12-09 10:11:22,007 INFO (SysLogAspect.java:64)- <---------End(35ms)--------->
+2020-12-09 10:11:33,931 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:11:33,938 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:11:33,938 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:11:33,938 INFO (SysLogAspect.java:43)- 请求地址:/cies/role/list
+2020-12-09 10:11:33,939 INFO (SysLogAspect.java:47)- 接口功能描述:获取角色列表
+2020-12-09 10:11:33,939 INFO (SysLogAspect.java:51)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:11:33,961 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@421280a9}
+2020-12-09 10:11:33,962 INFO (SysLogAspect.java:64)- <---------End(22ms)--------->
+2020-12-09 10:11:38,102 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:11:38,102 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:11:38,103 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:11:38,103 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:11:38,103 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:11:38,103 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:11:38,103 INFO (SysLogAspect.java:43)- 请求地址:/cies/role/list
+2020-12-09 10:11:38,103 INFO (SysLogAspect.java:43)- 请求地址:/cies/user/list
+2020-12-09 10:11:38,103 INFO (SysLogAspect.java:47)- 接口功能描述:获取用户列表
+2020-12-09 10:11:38,103 INFO (SysLogAspect.java:47)- 接口功能描述:获取角色列表
+2020-12-09 10:11:38,104 INFO (SysLogAspect.java:51)- 请求参数:[{}]
+2020-12-09 10:11:38,104 INFO (SysLogAspect.java:51)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:11:38,120 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@1b4714d6}
+2020-12-09 10:11:38,121 INFO (SysLogAspect.java:64)- <---------End(16ms)--------->
+2020-12-09 10:11:38,127 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@526e444d}
+2020-12-09 10:11:38,127 INFO (SysLogAspect.java:64)- <---------End(23ms)--------->
+2020-12-09 10:11:53,162 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:11:53,164 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:11:53,164 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:11:53,164 INFO (SysLogAspect.java:43)- 请求地址:/cies/role/list
+2020-12-09 10:11:53,164 INFO (SysLogAspect.java:47)- 接口功能描述:获取角色列表
+2020-12-09 10:11:53,165 INFO (SysLogAspect.java:51)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:11:53,175 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@3ff29a1a}
+2020-12-09 10:11:53,175 INFO (SysLogAspect.java:64)- <---------End(10ms)--------->
+2020-12-09 10:11:55,920 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:11:55,920 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:11:55,922 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:11:55,923 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:11:55,923 INFO (SysLogAspect.java:43)- 请求地址:/cies/role/list
+2020-12-09 10:11:55,924 INFO (SysLogAspect.java:47)- 接口功能描述:获取角色列表
+2020-12-09 10:11:55,924 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:11:55,924 INFO (SysLogAspect.java:51)- 请求参数:[{}]
+2020-12-09 10:11:55,924 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:11:55,924 INFO (SysLogAspect.java:43)- 请求地址:/cies/user/list
+2020-12-09 10:11:55,925 INFO (SysLogAspect.java:47)- 接口功能描述:获取用户列表
+2020-12-09 10:11:55,925 INFO (SysLogAspect.java:51)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:11:55,932 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@c604e73}
+2020-12-09 10:11:55,932 INFO (SysLogAspect.java:64)- <---------End(8ms)--------->
+2020-12-09 10:11:55,934 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@531079f2}
+2020-12-09 10:11:55,934 INFO (SysLogAspect.java:64)- <---------End(9ms)--------->
+2020-12-09 10:12:04,882 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:12:04,884 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:12:04,884 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:12:04,884 INFO (SysLogAspect.java:43)- 请求地址:/cies/device/list
+2020-12-09 10:12:04,885 INFO (SysLogAspect.java:47)- 接口功能描述:获取设备列表
+2020-12-09 10:12:04,886 INFO (SysLogAspect.java:51)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:12:04,898 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@2d5162c8}
+2020-12-09 10:12:04,898 INFO (SysLogAspect.java:64)- <---------End(11ms)--------->
+2020-12-09 10:12:07,600 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:12:07,601 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:12:07,601 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:12:07,601 INFO (SysLogAspect.java:43)- 请求地址:/cies/role/list
+2020-12-09 10:12:07,601 INFO (SysLogAspect.java:47)- 接口功能描述:获取角色列表
+2020-12-09 10:12:07,602 INFO (SysLogAspect.java:51)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:12:07,611 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@2e247124}
+2020-12-09 10:12:07,612 INFO (SysLogAspect.java:64)- <---------End(9ms)--------->
+2020-12-09 10:12:10,922 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:12:10,923 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:12:10,924 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:12:10,925 INFO (SysLogAspect.java:43)- 请求地址:/cies/device/list
+2020-12-09 10:12:10,925 INFO (SysLogAspect.java:47)- 接口功能描述:获取设备列表
+2020-12-09 10:12:10,926 INFO (SysLogAspect.java:51)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:12:10,934 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@5d3338bf}
+2020-12-09 10:12:10,934 INFO (SysLogAspect.java:64)- <---------End(8ms)--------->
+2020-12-09 10:12:13,266 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:12:13,266 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:12:13,267 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:12:13,267 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:12:13,268 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:12:13,268 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:12:13,268 INFO (SysLogAspect.java:43)- 请求地址:/cies/user/list
+2020-12-09 10:12:13,268 INFO (SysLogAspect.java:43)- 请求地址:/cies/role/list
+2020-12-09 10:12:13,268 INFO (SysLogAspect.java:47)- 接口功能描述:获取用户列表
+2020-12-09 10:12:13,268 INFO (SysLogAspect.java:47)- 接口功能描述:获取角色列表
+2020-12-09 10:12:13,268 INFO (SysLogAspect.java:51)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:12:13,268 INFO (SysLogAspect.java:51)- 请求参数:[{}]
+2020-12-09 10:12:13,274 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@5a26c5aa}
+2020-12-09 10:12:13,274 INFO (SysLogAspect.java:64)- <---------End(6ms)--------->
+2020-12-09 10:12:13,277 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@5f73e7e2}
+2020-12-09 10:12:13,278 INFO (SysLogAspect.java:64)- <---------End(9ms)--------->
+2020-12-09 10:12:20,970 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:12:20,972 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:12:20,972 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:12:20,973 INFO (SysLogAspect.java:43)- 请求地址:/cies/role/list
+2020-12-09 10:12:20,973 INFO (SysLogAspect.java:47)- 接口功能描述:获取角色列表
+2020-12-09 10:12:20,973 INFO (SysLogAspect.java:51)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:12:20,982 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@7f150c52}
+2020-12-09 10:12:20,982 INFO (SysLogAspect.java:64)- <---------End(8ms)--------->
+2020-12-09 10:12:22,734 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:12:22,735 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:12:22,735 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:12:22,735 INFO (SysLogAspect.java:43)- 请求地址:/cies/user/list
+2020-12-09 10:12:22,736 INFO (SysLogAspect.java:47)- 接口功能描述:获取用户列表
+2020-12-09 10:12:22,736 INFO (SysLogAspect.java:37)- <---------Start--------->
+2020-12-09 10:12:22,736 INFO (SysLogAspect.java:51)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:12:22,737 INFO (SysLogAspect.java:40)- 请求用户:test1
+2020-12-09 10:12:22,737 INFO (SysLogAspect.java:42)- IP地址:192.168.220.201
+2020-12-09 10:12:22,737 INFO (SysLogAspect.java:43)- 请求地址:/cies/role/list
+2020-12-09 10:12:22,737 INFO (SysLogAspect.java:47)- 接口功能描述:获取角色列表
+2020-12-09 10:12:22,738 INFO (SysLogAspect.java:51)- 请求参数:[{}]
+2020-12-09 10:12:22,746 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@2a3fbfb0}
+2020-12-09 10:12:22,746 INFO (SysLogAspect.java:60)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@21af4cb9}
+2020-12-09 10:12:22,746 INFO (SysLogAspect.java:64)- <---------End(10ms)--------->
+2020-12-09 10:12:22,746 INFO (SysLogAspect.java:64)- <---------End(8ms)--------->
+2020-12-09 10:17:10,231 INFO (ExecutorConfigurationSupport.java:218)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-09 10:17:10,239 INFO (DruidDataSource.java:1823)- {dataSource-1} closed
+2020-12-09 10:17:15,229 INFO (StartupInfoLogger.java:55)- Starting CiesApplication on WIN-HO76JP8GO6J with PID 23280 (D:\softwore\code\cies\target\classes started by Administrator in D:\softwore\code\cies)
+2020-12-09 10:17:15,231 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-12-09 10:17:16,384 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2020-12-09 10:17:16,391 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2020-12-09 10:17:16,392 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-12-09 10:17:16,392 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-09 10:17:16,456 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-12-09 10:17:16,456 INFO (ServletWebServerApplicationContext.java:285)- Root WebApplicationContext: initialization completed in 1185 ms
+2020-12-09 10:17:16,600 INFO (DruidDataSourceAutoConfigure.java:56)- Init DruidDataSource
+2020-12-09 10:17:16,888 INFO (DruidDataSource.java:928)- {dataSource-1} inited
+2020-12-09 10:17:17,974 WARN (TableInfoHelper.java:296)- Warn: Could not find @TableId in Class: com.ec.cies.pojo.Test.
+2020-12-09 10:17:18,215 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-09 10:17:18,282 INFO (ExecutorConfigurationSupport.java:181)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-09 10:17:18,447 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2020-12-09 10:17:18,463 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/cies'
+2020-12-09 10:17:18,464 INFO (DocumentationPluginsBootstrapper.java:147)- Context refreshed
+2020-12-09 10:17:18,477 INFO (DocumentationPluginsBootstrapper.java:150)- Found 1 custom documentation plugin(s)
+2020-12-09 10:17:18,504 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2020-12-09 10:17:18,715 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: batchDeleteUsingPOST_1
+2020-12-09 10:17:18,719 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: deleteUsingDELETE_1
+2020-12-09 10:17:18,723 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_1
+2020-12-09 10:17:18,729 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_1
+2020-12-09 10:17:18,734 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_1
+2020-12-09 10:17:18,738 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: batchDeleteUsingPOST_2
+2020-12-09 10:17:18,742 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: deleteUsingDELETE_2
+2020-12-09 10:17:18,746 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_2
+2020-12-09 10:17:18,749 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_2
+2020-12-09 10:17:18,754 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_2
+2020-12-09 10:17:18,783 INFO (StartupInfoLogger.java:61)- Started CiesApplication in 4.111 seconds (JVM running for 5.534)
+2020-12-09 10:17:25,036 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-09 10:17:25,037 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2020-12-09 10:17:25,051 INFO (FrameworkServlet.java:547)- Completed initialization in 14 ms
+2020-12-09 10:17:25,089 INFO (SysLogAspect.java:44)- <---------Start--------->
+2020-12-09 10:17:25,117 INFO (SysLogAspect.java:47)- 请求用户:test1
+2020-12-09 10:17:25,117 INFO (SysLogAspect.java:49)- IP地址:192.168.220.201
+2020-12-09 10:17:25,118 INFO (SysLogAspect.java:50)- 请求地址:/cies/role/list
+2020-12-09 10:17:25,118 INFO (SysLogAspect.java:54)- 接口功能描述:获取角色列表
+2020-12-09 10:17:25,121 INFO (SysLogAspect.java:58)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:17:25,258 INFO (SysLogAspect.java:67)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@f9cdd17}
+2020-12-09 10:17:25,259 INFO (SysLogAspect.java:71)- <---------End(137ms)--------->
+2020-12-09 10:17:28,064 INFO (SysLogAspect.java:44)- <---------Start--------->
+2020-12-09 10:17:28,066 INFO (SysLogAspect.java:44)- <---------Start--------->
+2020-12-09 10:17:28,066 INFO (SysLogAspect.java:47)- 请求用户:test1
+2020-12-09 10:17:28,067 INFO (SysLogAspect.java:49)- IP地址:192.168.220.201
+2020-12-09 10:17:28,067 INFO (SysLogAspect.java:50)- 请求地址:/cies/user/list
+2020-12-09 10:17:28,068 INFO (SysLogAspect.java:54)- 接口功能描述:获取用户列表
+2020-12-09 10:17:28,068 INFO (SysLogAspect.java:47)- 请求用户:test1
+2020-12-09 10:17:28,068 INFO (SysLogAspect.java:49)- IP地址:192.168.220.201
+2020-12-09 10:17:28,068 INFO (SysLogAspect.java:58)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:17:28,068 INFO (SysLogAspect.java:50)- 请求地址:/cies/role/list
+2020-12-09 10:17:28,069 INFO (SysLogAspect.java:54)- 接口功能描述:获取角色列表
+2020-12-09 10:17:28,069 INFO (SysLogAspect.java:58)- 请求参数:[{}]
+2020-12-09 10:17:28,085 INFO (SysLogAspect.java:67)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@43cbde7f}
+2020-12-09 10:17:28,086 INFO (SysLogAspect.java:71)- <---------End(16ms)--------->
+2020-12-09 10:17:28,100 INFO (SysLogAspect.java:67)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@6eec7bba}
+2020-12-09 10:17:28,100 INFO (SysLogAspect.java:71)- <---------End(32ms)--------->
+2020-12-09 10:18:02,980 INFO (ExecutorConfigurationSupport.java:218)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-09 10:18:02,984 INFO (DruidDataSource.java:1823)- {dataSource-1} closed
+2020-12-09 10:18:07,497 INFO (StartupInfoLogger.java:55)- Starting CiesApplication on WIN-HO76JP8GO6J with PID 14220 (D:\softwore\code\cies\target\classes started by Administrator in D:\softwore\code\cies)
+2020-12-09 10:18:07,500 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-12-09 10:18:08,517 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2020-12-09 10:18:08,522 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2020-12-09 10:18:08,522 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-12-09 10:18:08,523 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-09 10:18:08,585 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-12-09 10:18:08,586 INFO (ServletWebServerApplicationContext.java:285)- Root WebApplicationContext: initialization completed in 1036 ms
+2020-12-09 10:18:08,722 INFO (DruidDataSourceAutoConfigure.java:56)- Init DruidDataSource
+2020-12-09 10:18:08,988 INFO (DruidDataSource.java:928)- {dataSource-1} inited
+2020-12-09 10:18:10,067 WARN (TableInfoHelper.java:296)- Warn: Could not find @TableId in Class: com.ec.cies.pojo.Test.
+2020-12-09 10:18:10,326 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-09 10:18:10,398 INFO (ExecutorConfigurationSupport.java:181)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-09 10:18:10,569 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2020-12-09 10:18:10,585 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/cies'
+2020-12-09 10:18:10,586 INFO (DocumentationPluginsBootstrapper.java:147)- Context refreshed
+2020-12-09 10:18:10,597 INFO (DocumentationPluginsBootstrapper.java:150)- Found 1 custom documentation plugin(s)
+2020-12-09 10:18:10,637 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2020-12-09 10:18:10,728 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: batchDeleteUsingPOST_1
+2020-12-09 10:18:10,731 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: deleteUsingDELETE_1
+2020-12-09 10:18:10,734 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_1
+2020-12-09 10:18:10,737 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_1
+2020-12-09 10:18:10,740 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_1
+2020-12-09 10:18:10,743 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: batchDeleteUsingPOST_2
+2020-12-09 10:18:10,745 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: deleteUsingDELETE_2
+2020-12-09 10:18:10,747 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_2
+2020-12-09 10:18:10,751 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_2
+2020-12-09 10:18:10,754 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_2
+2020-12-09 10:18:10,768 INFO (StartupInfoLogger.java:61)- Started CiesApplication in 3.748 seconds (JVM running for 5.041)
+2020-12-09 10:18:14,654 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-09 10:18:14,655 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2020-12-09 10:18:14,660 INFO (FrameworkServlet.java:547)- Completed initialization in 5 ms
+2020-12-09 10:18:14,696 INFO (SysLogAspect.java:44)- <---------Start--------->
+2020-12-09 10:18:14,721 INFO (SysLogAspect.java:47)- 请求用户:test1
+2020-12-09 10:18:14,722 INFO (SysLogAspect.java:49)- IP地址:192.168.220.201
+2020-12-09 10:18:14,722 INFO (SysLogAspect.java:50)- 请求地址:/cies/role/list
+2020-12-09 10:18:14,722 INFO (SysLogAspect.java:54)- 接口功能描述:获取角色列表
+2020-12-09 10:18:14,727 INFO (SysLogAspect.java:58)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:18:14,857 INFO (SysLogAspect.java:67)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@1691a195}
+2020-12-09 10:18:14,858 INFO (SysLogAspect.java:71)- <---------End(130ms)--------->
+2020-12-09 10:18:18,251 INFO (SysLogAspect.java:44)- <---------Start--------->
+2020-12-09 10:18:18,252 INFO (SysLogAspect.java:44)- <---------Start--------->
+2020-12-09 10:18:18,253 INFO (SysLogAspect.java:47)- 请求用户:test1
+2020-12-09 10:18:18,253 INFO (SysLogAspect.java:47)- 请求用户:test1
+2020-12-09 10:18:18,254 INFO (SysLogAspect.java:49)- IP地址:192.168.220.201
+2020-12-09 10:18:18,254 INFO (SysLogAspect.java:49)- IP地址:192.168.220.201
+2020-12-09 10:18:18,254 INFO (SysLogAspect.java:50)- 请求地址:/cies/user/list
+2020-12-09 10:18:18,254 INFO (SysLogAspect.java:50)- 请求地址:/cies/role/list
+2020-12-09 10:18:18,254 INFO (SysLogAspect.java:54)- 接口功能描述:获取用户列表
+2020-12-09 10:18:18,254 INFO (SysLogAspect.java:54)- 接口功能描述:获取角色列表
+2020-12-09 10:18:18,255 INFO (SysLogAspect.java:58)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:18:18,255 INFO (SysLogAspect.java:58)- 请求参数:[{}]
+2020-12-09 10:18:18,273 INFO (SysLogAspect.java:67)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@69f97d90}
+2020-12-09 10:18:18,273 INFO (SysLogAspect.java:71)- <---------End(18ms)--------->
+2020-12-09 10:18:18,294 INFO (SysLogAspect.java:67)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@27c01186}
+2020-12-09 10:18:18,295 INFO (SysLogAspect.java:71)- <---------End(39ms)--------->
+2020-12-09 10:20:04,004 INFO (ExecutorConfigurationSupport.java:218)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-09 10:20:04,009 INFO (DruidDataSource.java:1823)- {dataSource-1} closed
+2020-12-09 10:20:08,547 INFO (StartupInfoLogger.java:55)- Starting CiesApplication on WIN-HO76JP8GO6J with PID 25708 (D:\softwore\code\cies\target\classes started by Administrator in D:\softwore\code\cies)
+2020-12-09 10:20:08,551 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-12-09 10:20:09,577 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2020-12-09 10:20:09,583 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2020-12-09 10:20:09,583 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-12-09 10:20:09,584 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-09 10:20:09,649 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-12-09 10:20:09,650 INFO (ServletWebServerApplicationContext.java:285)- Root WebApplicationContext: initialization completed in 1051 ms
+2020-12-09 10:20:09,786 INFO (DruidDataSourceAutoConfigure.java:56)- Init DruidDataSource
+2020-12-09 10:20:10,032 INFO (DruidDataSource.java:928)- {dataSource-1} inited
+2020-12-09 10:20:11,102 WARN (TableInfoHelper.java:296)- Warn: Could not find @TableId in Class: com.ec.cies.pojo.Test.
+2020-12-09 10:20:11,322 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-09 10:20:11,390 INFO (ExecutorConfigurationSupport.java:181)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-09 10:20:11,542 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2020-12-09 10:20:11,558 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/cies'
+2020-12-09 10:20:11,559 INFO (DocumentationPluginsBootstrapper.java:147)- Context refreshed
+2020-12-09 10:20:11,569 INFO (DocumentationPluginsBootstrapper.java:150)- Found 1 custom documentation plugin(s)
+2020-12-09 10:20:11,596 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2020-12-09 10:20:11,702 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: batchDeleteUsingPOST_1
+2020-12-09 10:20:11,705 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: deleteUsingDELETE_1
+2020-12-09 10:20:11,708 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_1
+2020-12-09 10:20:11,712 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_1
+2020-12-09 10:20:11,714 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_1
+2020-12-09 10:20:11,717 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: batchDeleteUsingPOST_2
+2020-12-09 10:20:11,720 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: deleteUsingDELETE_2
+2020-12-09 10:20:11,722 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_2
+2020-12-09 10:20:11,726 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_2
+2020-12-09 10:20:11,728 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_2
+2020-12-09 10:20:11,743 INFO (StartupInfoLogger.java:61)- Started CiesApplication in 3.666 seconds (JVM running for 4.773)
+2020-12-09 10:20:23,685 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-09 10:20:23,685 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2020-12-09 10:20:23,692 INFO (FrameworkServlet.java:547)- Completed initialization in 7 ms
+2020-12-09 10:20:23,730 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 10:20:23,763 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 10:20:23,763 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 10:20:23,763 INFO (SysLogAspect.java:44)- 请求地址:/cies/device/list
+2020-12-09 10:20:23,764 INFO (SysLogAspect.java:48)- 接口功能描述:获取设备列表
+2020-12-09 10:20:23,767 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:20:23,900 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@60169aba}
+2020-12-09 10:20:23,900 INFO (SysLogAspect.java:65)- <---------End(132ms)--------->
+2020-12-09 10:32:18,350 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 10:32:18,354 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 10:32:18,355 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 10:32:18,356 INFO (SysLogAspect.java:44)- 请求地址:/cies/device/list
+2020-12-09 10:32:18,356 INFO (SysLogAspect.java:48)- 接口功能描述:获取设备列表
+2020-12-09 10:32:18,360 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:32:18,393 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@45a66d84}
+2020-12-09 10:32:18,394 INFO (SysLogAspect.java:65)- <---------End(33ms)--------->
+2020-12-09 10:32:25,917 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 10:32:25,918 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 10:32:25,918 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 10:32:25,919 INFO (SysLogAspect.java:44)- 请求地址:/cies/user/list
+2020-12-09 10:32:25,919 INFO (SysLogAspect.java:48)- 接口功能描述:获取用户列表
+2020-12-09 10:32:25,919 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 10:32:25,942 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@5d3fcd6a}
+2020-12-09 10:32:25,942 INFO (SysLogAspect.java:65)- <---------End(23ms)--------->
+2020-12-09 10:32:26,406 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 10:32:26,407 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 10:32:26,407 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 10:32:26,407 INFO (SysLogAspect.java:44)- 请求地址:/cies/role/list
+2020-12-09 10:32:26,407 INFO (SysLogAspect.java:48)- 接口功能描述:获取角色列表
+2020-12-09 10:32:26,408 INFO (SysLogAspect.java:52)- 请求参数:[{}]
+2020-12-09 10:32:26,419 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@163d2bc8}
+2020-12-09 10:32:26,419 INFO (SysLogAspect.java:65)- <---------End(11ms)--------->
+2020-12-09 11:00:51,492 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:00:51,511 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:00:51,512 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:00:51,512 INFO (SysLogAspect.java:44)- 请求地址:/cies/device/list
+2020-12-09 11:00:51,512 INFO (SysLogAspect.java:48)- 接口功能描述:获取设备列表
+2020-12-09 11:00:51,514 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 11:00:51,553 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@78d69c8a}
+2020-12-09 11:00:51,553 INFO (SysLogAspect.java:65)- <---------End(39ms)--------->
+2020-12-09 11:00:57,356 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:00:57,358 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:00:57,358 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:00:57,359 INFO (SysLogAspect.java:44)- 请求地址:/cies/device/list
+2020-12-09 11:00:57,359 INFO (SysLogAspect.java:48)- 接口功能描述:获取设备列表
+2020-12-09 11:00:57,359 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 11:00:57,384 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@4ac01263}
+2020-12-09 11:00:57,385 INFO (SysLogAspect.java:65)- <---------End(25ms)--------->
+2020-12-09 11:01:05,242 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:01:05,243 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:01:05,244 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:01:05,244 INFO (SysLogAspect.java:44)- 请求地址:/cies/role/list
+2020-12-09 11:01:05,244 INFO (SysLogAspect.java:48)- 接口功能描述:获取角色列表
+2020-12-09 11:01:05,244 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 11:01:05,253 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@4fe25895}
+2020-12-09 11:01:05,253 INFO (SysLogAspect.java:65)- <---------End(8ms)--------->
+2020-12-09 11:01:08,267 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:01:08,268 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:01:08,268 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:01:08,268 INFO (SysLogAspect.java:44)- 请求地址:/cies/user/list
+2020-12-09 11:01:08,268 INFO (SysLogAspect.java:48)- 接口功能描述:获取用户列表
+2020-12-09 11:01:08,269 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 11:01:08,284 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@25b6d3a9}
+2020-12-09 11:01:08,284 INFO (SysLogAspect.java:65)- <---------End(15ms)--------->
+2020-12-09 11:01:08,758 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:01:08,758 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:01:08,759 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:01:08,759 INFO (SysLogAspect.java:44)- 请求地址:/cies/role/list
+2020-12-09 11:01:08,759 INFO (SysLogAspect.java:48)- 接口功能描述:获取角色列表
+2020-12-09 11:01:08,759 INFO (SysLogAspect.java:52)- 请求参数:[{}]
+2020-12-09 11:01:08,767 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@6c126945}
+2020-12-09 11:01:08,767 INFO (SysLogAspect.java:65)- <---------End(8ms)--------->
+2020-12-09 11:01:50,587 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:01:50,592 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:01:50,592 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:01:50,593 INFO (SysLogAspect.java:44)- 请求地址:/cies/role/list
+2020-12-09 11:01:50,594 INFO (SysLogAspect.java:48)- 功能描述:获取角色列表
+2020-12-09 11:01:50,594 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 11:01:50,610 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@18f963c5}
+2020-12-09 11:01:50,611 INFO (SysLogAspect.java:65)- <---------End(15ms)--------->
+2020-12-09 11:03:19,382 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:03:19,384 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:03:19,385 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:03:19,385 INFO (SysLogAspect.java:44)- 请求地址:/cies/user/list
+2020-12-09 11:03:19,386 INFO (SysLogAspect.java:48)- 功能描述:获取用户列表
+2020-12-09 11:03:19,386 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 11:03:19,418 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@9186a60}
+2020-12-09 11:03:19,418 INFO (SysLogAspect.java:65)- <---------End(31ms)--------->
+2020-12-09 11:03:19,868 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:03:19,869 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:03:19,869 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:03:19,869 INFO (SysLogAspect.java:44)- 请求地址:/cies/role/list
+2020-12-09 11:03:19,869 INFO (SysLogAspect.java:48)- 功能描述:获取角色列表
+2020-12-09 11:03:19,869 INFO (SysLogAspect.java:52)- 请求参数:[{}]
+2020-12-09 11:03:19,877 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@78879e98}
+2020-12-09 11:03:19,878 INFO (SysLogAspect.java:65)- <---------End(8ms)--------->
+2020-12-09 11:03:21,856 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:03:21,858 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:03:21,858 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:03:21,858 INFO (SysLogAspect.java:44)- 请求地址:/cies/user/delete/129
+2020-12-09 11:03:21,858 INFO (SysLogAspect.java:48)- 功能描述:单个删除用户
+2020-12-09 11:03:21,858 INFO (SysLogAspect.java:52)- 请求参数:[129]
+2020-12-09 11:03:21,899 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1}
+2020-12-09 11:03:21,900 INFO (SysLogAspect.java:65)- <---------End(41ms)--------->
+2020-12-09 11:03:21,906 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:03:21,907 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:03:21,907 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:03:21,907 INFO (SysLogAspect.java:44)- 请求地址:/cies/user/list
+2020-12-09 11:03:21,907 INFO (SysLogAspect.java:48)- 功能描述:获取用户列表
+2020-12-09 11:03:21,908 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 11:03:21,915 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@5e812ce3}
+2020-12-09 11:03:21,915 INFO (SysLogAspect.java:65)- <---------End(7ms)--------->
+2020-12-09 11:04:49,084 INFO (ExecutorConfigurationSupport.java:218)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-09 11:04:49,102 INFO (DruidDataSource.java:1823)- {dataSource-1} closed
+2020-12-09 11:04:52,425 INFO (StartupInfoLogger.java:55)- Starting CiesApplication on WIN-HO76JP8GO6J with PID 25204 (D:\softwore\code\cies\target\classes started by Administrator in D:\softwore\code\cies)
+2020-12-09 11:04:52,428 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-12-09 11:04:53,489 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2020-12-09 11:04:53,498 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2020-12-09 11:04:53,498 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-12-09 11:04:53,499 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-09 11:04:53,569 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-12-09 11:04:53,569 INFO (ServletWebServerApplicationContext.java:285)- Root WebApplicationContext: initialization completed in 1095 ms
+2020-12-09 11:04:53,716 INFO (DruidDataSourceAutoConfigure.java:56)- Init DruidDataSource
+2020-12-09 11:04:53,975 INFO (DruidDataSource.java:928)- {dataSource-1} inited
+2020-12-09 11:04:55,126 WARN (TableInfoHelper.java:296)- Warn: Could not find @TableId in Class: com.ec.cies.pojo.Test.
+2020-12-09 11:04:55,445 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-09 11:04:55,557 INFO (ExecutorConfigurationSupport.java:181)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-09 11:04:55,798 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2020-12-09 11:04:55,816 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/cies'
+2020-12-09 11:04:55,817 INFO (DocumentationPluginsBootstrapper.java:147)- Context refreshed
+2020-12-09 11:04:55,830 INFO (DocumentationPluginsBootstrapper.java:150)- Found 1 custom documentation plugin(s)
+2020-12-09 11:04:55,860 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2020-12-09 11:04:56,032 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: batchDeleteUsingPOST_1
+2020-12-09 11:04:56,036 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: deleteUsingDELETE_1
+2020-12-09 11:04:56,040 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_1
+2020-12-09 11:04:56,044 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_1
+2020-12-09 11:04:56,047 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_1
+2020-12-09 11:04:56,050 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: batchDeleteUsingPOST_2
+2020-12-09 11:04:56,053 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: deleteUsingDELETE_2
+2020-12-09 11:04:56,057 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_2
+2020-12-09 11:04:56,062 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_2
+2020-12-09 11:04:56,066 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_2
+2020-12-09 11:04:56,091 INFO (StartupInfoLogger.java:61)- Started CiesApplication in 4.114 seconds (JVM running for 5.24)
+2020-12-09 11:04:56,219 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-09 11:04:56,219 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2020-12-09 11:04:56,226 INFO (FrameworkServlet.java:547)- Completed initialization in 7 ms
+2020-12-09 11:04:57,167 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:04:57,170 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:04:57,171 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:04:57,171 INFO (SysLogAspect.java:44)- 请求地址:/cies/role/list
+2020-12-09 11:04:57,171 INFO (SysLogAspect.java:48)- 功能描述:获取角色列表
+2020-12-09 11:04:57,176 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 11:04:57,189 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:04:57,190 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:04:57,190 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:04:57,190 INFO (SysLogAspect.java:44)- 请求地址:/cies/user/list
+2020-12-09 11:04:57,191 INFO (SysLogAspect.java:48)- 功能描述:获取用户列表
+2020-12-09 11:04:57,192 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 11:04:57,246 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@1659725}
+2020-12-09 11:04:57,246 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@6ad7a467}
+2020-12-09 11:04:57,246 INFO (SysLogAspect.java:65)- <---------End(54ms)--------->
+2020-12-09 11:04:57,246 INFO (SysLogAspect.java:65)- <---------End(70ms)--------->
+2020-12-09 11:04:57,671 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:04:57,672 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:04:57,672 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:04:57,672 INFO (SysLogAspect.java:44)- 请求地址:/cies/role/list
+2020-12-09 11:04:57,672 INFO (SysLogAspect.java:48)- 功能描述:获取角色列表
+2020-12-09 11:04:57,672 INFO (SysLogAspect.java:52)- 请求参数:[{}]
+2020-12-09 11:04:57,677 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@73588af0}
+2020-12-09 11:04:57,678 INFO (SysLogAspect.java:65)- <---------End(5ms)--------->
+2020-12-09 11:04:58,134 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:04:58,135 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:04:58,135 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:04:58,135 INFO (SysLogAspect.java:44)- 请求地址:/cies/role/list
+2020-12-09 11:04:58,135 INFO (SysLogAspect.java:48)- 功能描述:获取角色列表
+2020-12-09 11:04:58,136 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 11:04:58,143 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@6e10c756}
+2020-12-09 11:04:58,144 INFO (SysLogAspect.java:65)- <---------End(7ms)--------->
+2020-12-09 11:06:30,763 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:06:30,763 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:06:30,764 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:06:30,764 INFO (SysLogAspect.java:44)- 请求地址:/cies/user/list
+2020-12-09 11:06:30,764 INFO (SysLogAspect.java:48)- 功能描述:获取用户列表
+2020-12-09 11:06:30,764 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 11:06:30,771 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@39f78c5}
+2020-12-09 11:06:30,772 INFO (SysLogAspect.java:65)- <---------End(7ms)--------->
+2020-12-09 11:06:31,255 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:06:31,256 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:06:31,256 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:06:31,257 INFO (SysLogAspect.java:44)- 请求地址:/cies/role/list
+2020-12-09 11:06:31,257 INFO (SysLogAspect.java:48)- 功能描述:获取角色列表
+2020-12-09 11:06:31,257 INFO (SysLogAspect.java:52)- 请求参数:[{}]
+2020-12-09 11:06:31,264 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@7a00cfca}
+2020-12-09 11:06:31,264 INFO (SysLogAspect.java:65)- <---------End(7ms)--------->
+2020-12-09 11:06:31,612 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:06:31,612 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:06:31,612 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:06:31,612 INFO (SysLogAspect.java:44)- 请求地址:/cies/role/list
+2020-12-09 11:06:31,613 INFO (SysLogAspect.java:48)- 功能描述:获取角色列表
+2020-12-09 11:06:31,613 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 11:06:31,618 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@7568cb73}
+2020-12-09 11:06:31,618 INFO (SysLogAspect.java:65)- <---------End(5ms)--------->
+2020-12-09 11:06:31,948 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:06:31,948 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:06:31,949 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:06:31,949 INFO (SysLogAspect.java:44)- 请求地址:/cies/user/list
+2020-12-09 11:06:31,949 INFO (SysLogAspect.java:48)- 功能描述:获取用户列表
+2020-12-09 11:06:31,949 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 11:06:31,957 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@7561bbf8}
+2020-12-09 11:06:31,958 INFO (SysLogAspect.java:65)- <---------End(8ms)--------->
+2020-12-09 11:06:32,438 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:06:32,438 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:06:32,439 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:06:32,439 INFO (SysLogAspect.java:44)- 请求地址:/cies/role/list
+2020-12-09 11:06:32,439 INFO (SysLogAspect.java:48)- 功能描述:获取角色列表
+2020-12-09 11:06:32,439 INFO (SysLogAspect.java:52)- 请求参数:[{}]
+2020-12-09 11:06:32,446 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@45baff0e}
+2020-12-09 11:06:32,446 INFO (SysLogAspect.java:65)- <---------End(7ms)--------->
+2020-12-09 11:06:36,525 ERROR (DirectJDKLog.java:175)- Servlet.service() for servlet [dispatcherServlet] in context with path [/cies] threw exception [Request processing failed; nested exception is com.ec.cies.exception.RRException: 无token,请重新登录] with root cause
+com.ec.cies.exception.RRException: 无token,请重新登录
+	at com.ec.cies.utils.interceptor.TokenVerify.preHandle(TokenVerify.java:34)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:151)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doOptions(FrameworkServlet.java:945)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-09 11:06:36,531 ERROR (DirectJDKLog.java:175)- Servlet.service() for servlet [dispatcherServlet] threw exception
+com.ec.cies.exception.RRException: 无token,请重新登录
+	at com.ec.cies.utils.interceptor.TokenVerify.preHandle(TokenVerify.java:34)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:151)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doOptions(FrameworkServlet.java:945)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-09 11:06:36,532 ERROR (DirectJDKLog.java:175)- Exception Processing ErrorPage[errorCode=0, location=/error]
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is com.ec.cies.exception.RRException: 无token,请重新登录
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doOptions(FrameworkServlet.java:945)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.ec.cies.exception.RRException: 无token,请重新登录
+	at com.ec.cies.utils.interceptor.TokenVerify.preHandle(TokenVerify.java:34)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:151)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	... 36 common frames omitted
+2020-12-09 11:06:37,687 ERROR (DirectJDKLog.java:175)- Servlet.service() for servlet [dispatcherServlet] in context with path [/cies] threw exception [Request processing failed; nested exception is com.ec.cies.exception.RRException: 无token,请重新登录] with root cause
+com.ec.cies.exception.RRException: 无token,请重新登录
+	at com.ec.cies.utils.interceptor.TokenVerify.preHandle(TokenVerify.java:34)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:151)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doOptions(FrameworkServlet.java:945)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-09 11:06:37,688 ERROR (DirectJDKLog.java:175)- Servlet.service() for servlet [dispatcherServlet] threw exception
+com.ec.cies.exception.RRException: 无token,请重新登录
+	at com.ec.cies.utils.interceptor.TokenVerify.preHandle(TokenVerify.java:34)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:151)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doOptions(FrameworkServlet.java:945)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-09 11:06:37,688 ERROR (DirectJDKLog.java:175)- Exception Processing ErrorPage[errorCode=0, location=/error]
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is com.ec.cies.exception.RRException: 无token,请重新登录
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doOptions(FrameworkServlet.java:945)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.ec.cies.exception.RRException: 无token,请重新登录
+	at com.ec.cies.utils.interceptor.TokenVerify.preHandle(TokenVerify.java:34)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:151)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	... 36 common frames omitted
+2020-12-09 11:06:49,283 ERROR (DirectJDKLog.java:175)- Servlet.service() for servlet [dispatcherServlet] in context with path [/cies] threw exception [Request processing failed; nested exception is com.ec.cies.exception.RRException: 无token,请重新登录] with root cause
+com.ec.cies.exception.RRException: 无token,请重新登录
+	at com.ec.cies.utils.interceptor.TokenVerify.preHandle(TokenVerify.java:34)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:151)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doOptions(FrameworkServlet.java:945)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-09 11:06:49,284 ERROR (DirectJDKLog.java:175)- Servlet.service() for servlet [dispatcherServlet] threw exception
+com.ec.cies.exception.RRException: 无token,请重新登录
+	at com.ec.cies.utils.interceptor.TokenVerify.preHandle(TokenVerify.java:34)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:151)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doOptions(FrameworkServlet.java:945)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-09 11:06:49,284 ERROR (DirectJDKLog.java:175)- Exception Processing ErrorPage[errorCode=0, location=/error]
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is com.ec.cies.exception.RRException: 无token,请重新登录
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doOptions(FrameworkServlet.java:945)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.ec.cies.exception.RRException: 无token,请重新登录
+	at com.ec.cies.utils.interceptor.TokenVerify.preHandle(TokenVerify.java:34)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:151)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	... 36 common frames omitted
+2020-12-09 11:07:23,256 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:07:23,257 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:07:23,257 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:07:23,257 INFO (SysLogAspect.java:44)- 请求地址:/cies/role/list
+2020-12-09 11:07:23,257 INFO (SysLogAspect.java:48)- 功能描述:获取角色列表
+2020-12-09 11:07:23,257 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 11:07:23,264 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@54e7cb61}
+2020-12-09 11:07:23,264 INFO (SysLogAspect.java:65)- <---------End(6ms)--------->
+2020-12-09 11:07:24,397 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:07:24,398 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:07:24,398 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:07:24,399 INFO (SysLogAspect.java:44)- 请求地址:/cies/user/list
+2020-12-09 11:07:24,399 INFO (SysLogAspect.java:48)- 功能描述:获取用户列表
+2020-12-09 11:07:24,399 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 11:07:24,407 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@4dff7bae}
+2020-12-09 11:07:24,407 INFO (SysLogAspect.java:65)- <---------End(8ms)--------->
+2020-12-09 11:07:24,883 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:07:24,884 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:07:24,884 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:07:24,884 INFO (SysLogAspect.java:44)- 请求地址:/cies/role/list
+2020-12-09 11:07:24,884 INFO (SysLogAspect.java:48)- 功能描述:获取角色列表
+2020-12-09 11:07:24,884 INFO (SysLogAspect.java:52)- 请求参数:[{}]
+2020-12-09 11:07:24,889 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@16ac3d74}
+2020-12-09 11:07:24,889 INFO (SysLogAspect.java:65)- <---------End(5ms)--------->
+2020-12-09 11:07:25,065 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:07:25,065 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:07:25,066 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:07:25,066 INFO (SysLogAspect.java:44)- 请求地址:/cies/role/list
+2020-12-09 11:07:25,066 INFO (SysLogAspect.java:48)- 功能描述:获取角色列表
+2020-12-09 11:07:25,066 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 11:07:25,072 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@70357572}
+2020-12-09 11:07:25,072 INFO (SysLogAspect.java:65)- <---------End(6ms)--------->
+2020-12-09 11:07:28,827 ERROR (DirectJDKLog.java:175)- Servlet.service() for servlet [dispatcherServlet] in context with path [/cies] threw exception [Request processing failed; nested exception is com.ec.cies.exception.RRException: 无token,请重新登录] with root cause
+com.ec.cies.exception.RRException: 无token,请重新登录
+	at com.ec.cies.utils.interceptor.TokenVerify.preHandle(TokenVerify.java:34)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:151)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doOptions(FrameworkServlet.java:945)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-09 11:07:28,828 ERROR (DirectJDKLog.java:175)- Servlet.service() for servlet [dispatcherServlet] threw exception
+com.ec.cies.exception.RRException: 无token,请重新登录
+	at com.ec.cies.utils.interceptor.TokenVerify.preHandle(TokenVerify.java:34)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:151)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doOptions(FrameworkServlet.java:945)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-09 11:07:28,829 ERROR (DirectJDKLog.java:175)- Exception Processing ErrorPage[errorCode=0, location=/error]
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is com.ec.cies.exception.RRException: 无token,请重新登录
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doOptions(FrameworkServlet.java:945)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.ec.cies.exception.RRException: 无token,请重新登录
+	at com.ec.cies.utils.interceptor.TokenVerify.preHandle(TokenVerify.java:34)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:151)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	... 36 common frames omitted
+2020-12-09 11:11:35,926 INFO (ExecutorConfigurationSupport.java:218)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-09 11:11:35,931 INFO (DruidDataSource.java:1823)- {dataSource-1} closed

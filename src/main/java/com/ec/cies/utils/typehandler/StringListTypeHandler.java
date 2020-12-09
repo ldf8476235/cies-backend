@@ -15,7 +15,7 @@ import java.util.List;
 
 @MappedJdbcTypes(JdbcType.VARCHAR)  //数据库类型
 @MappedTypes({List.class})
-public class ListTypeHandler implements TypeHandler<List<String>> {
+public class StringListTypeHandler implements TypeHandler<List<String>> {
     @Override
     public void setParameter(PreparedStatement ps, int i, List<String> parameter, JdbcType jdbcType) throws SQLException {
         String hobbys = dealListToOneStr(parameter);

@@ -3,9 +3,8 @@ package com.ec.cies.pojo;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.ec.cies.utils.typehandler.ListTypeHandler;
+import com.ec.cies.utils.typehandler.StringListTypeHandler;
 import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.util.List;
@@ -25,7 +24,7 @@ public class Device {
 
     private Integer devicePort;
 
-    @TableField(typeHandler = ListTypeHandler.class)
+    @TableField(typeHandler = StringListTypeHandler.class)
     private List<String> deviceType;
 
     private Integer deviceStatus;
