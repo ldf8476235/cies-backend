@@ -1196,3 +1196,85 @@ Caused by: com.ec.cies.exception.RRException: 无token,请重新登录
 	... 36 common frames omitted
 2020-12-09 11:11:35,926 INFO (ExecutorConfigurationSupport.java:218)- Shutting down ExecutorService 'applicationTaskExecutor'
 2020-12-09 11:11:35,931 INFO (DruidDataSource.java:1823)- {dataSource-1} closed
+2020-12-09 11:11:40,213 INFO (StartupInfoLogger.java:55)- Starting CiesApplication on WIN-HO76JP8GO6J with PID 15920 (D:\softwore\code\cies\target\classes started by Administrator in D:\softwore\code\cies)
+2020-12-09 11:11:40,217 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-12-09 11:11:41,265 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2020-12-09 11:11:41,272 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2020-12-09 11:11:41,273 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2020-12-09 11:11:41,274 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-09 11:11:41,343 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2020-12-09 11:11:41,344 INFO (ServletWebServerApplicationContext.java:285)- Root WebApplicationContext: initialization completed in 1077 ms
+2020-12-09 11:11:41,485 INFO (DruidDataSourceAutoConfigure.java:56)- Init DruidDataSource
+2020-12-09 11:11:41,728 INFO (DruidDataSource.java:928)- {dataSource-1} inited
+2020-12-09 11:11:42,810 WARN (TableInfoHelper.java:296)- Warn: Could not find @TableId in Class: com.ec.cies.pojo.Test.
+2020-12-09 11:11:43,046 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-09 11:11:43,114 INFO (ExecutorConfigurationSupport.java:181)- Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-09 11:11:43,287 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2020-12-09 11:11:43,304 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/cies'
+2020-12-09 11:11:43,305 INFO (DocumentationPluginsBootstrapper.java:147)- Context refreshed
+2020-12-09 11:11:43,318 INFO (DocumentationPluginsBootstrapper.java:150)- Found 1 custom documentation plugin(s)
+2020-12-09 11:11:43,348 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2020-12-09 11:11:43,453 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: batchDeleteUsingPOST_1
+2020-12-09 11:11:43,456 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: deleteUsingDELETE_1
+2020-12-09 11:11:43,459 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_1
+2020-12-09 11:11:43,463 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_1
+2020-12-09 11:11:43,466 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_1
+2020-12-09 11:11:43,469 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: batchDeleteUsingPOST_2
+2020-12-09 11:11:43,472 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: deleteUsingDELETE_2
+2020-12-09 11:11:43,476 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_2
+2020-12-09 11:11:43,480 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_2
+2020-12-09 11:11:43,482 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_2
+2020-12-09 11:11:43,496 INFO (StartupInfoLogger.java:61)- Started CiesApplication in 3.775 seconds (JVM running for 4.866)
+2020-12-09 11:11:48,383 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-09 11:11:48,384 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2020-12-09 11:11:48,389 INFO (FrameworkServlet.java:547)- Completed initialization in 5 ms
+2020-12-09 11:11:49,057 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:11:49,060 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:11:49,060 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:11:49,060 INFO (SysLogAspect.java:44)- 请求地址:/cies/role/add
+2020-12-09 11:11:49,061 INFO (SysLogAspect.java:48)- 功能描述:添加角色
+2020-12-09 11:11:49,065 INFO (SysLogAspect.java:52)- 请求参数:[{"roleName":"","roleDesc":"123","roleType":[1,2,11,12,3,13,14,4,15,16,5,17,18,6,19,20,7,21,22,8,23,24,9,25,26,10,27,28]}]
+2020-12-09 11:11:49,105 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1}
+2020-12-09 11:11:49,106 INFO (SysLogAspect.java:65)- <---------End(40ms)--------->
+2020-12-09 11:11:49,141 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:11:49,143 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:11:49,144 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:11:49,144 INFO (SysLogAspect.java:44)- 请求地址:/cies/role/list
+2020-12-09 11:11:49,144 INFO (SysLogAspect.java:48)- 功能描述:获取角色列表
+2020-12-09 11:11:49,145 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 11:11:49,180 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@586f62c5}
+2020-12-09 11:11:49,181 INFO (SysLogAspect.java:65)- <---------End(35ms)--------->
+2020-12-09 11:12:50,147 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:12:50,147 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:12:50,147 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:12:50,148 INFO (SysLogAspect.java:44)- 请求地址:/cies/user/list
+2020-12-09 11:12:50,148 INFO (SysLogAspect.java:48)- 功能描述:获取用户列表
+2020-12-09 11:12:50,148 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 11:12:50,163 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@727dc14}
+2020-12-09 11:12:50,163 INFO (SysLogAspect.java:65)- <---------End(15ms)--------->
+2020-12-09 11:12:50,637 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:12:50,637 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:12:50,638 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:12:50,638 INFO (SysLogAspect.java:44)- 请求地址:/cies/role/list
+2020-12-09 11:12:50,638 INFO (SysLogAspect.java:48)- 功能描述:获取角色列表
+2020-12-09 11:12:50,638 INFO (SysLogAspect.java:52)- 请求参数:[{}]
+2020-12-09 11:12:50,650 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@7e141fd9}
+2020-12-09 11:12:50,650 INFO (SysLogAspect.java:65)- <---------End(12ms)--------->
+2020-12-09 11:12:59,520 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:12:59,521 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:12:59,522 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:12:59,522 INFO (SysLogAspect.java:44)- 请求地址:/cies/user/add
+2020-12-09 11:12:59,522 INFO (SysLogAspect.java:48)- 功能描述:添加用户
+2020-12-09 11:12:59,523 INFO (SysLogAspect.java:52)- 请求参数:[{"userName":"大师傅士大夫","roleName":"12314314","userPwd":"123"}]
+2020-12-09 11:12:59,540 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1}
+2020-12-09 11:12:59,540 INFO (SysLogAspect.java:65)- <---------End(17ms)--------->
+2020-12-09 11:12:59,556 INFO (SysLogAspect.java:38)- <---------Start--------->
+2020-12-09 11:12:59,557 INFO (SysLogAspect.java:41)- 请求用户:test1
+2020-12-09 11:12:59,558 INFO (SysLogAspect.java:43)- IP地址:192.168.220.201
+2020-12-09 11:12:59,558 INFO (SysLogAspect.java:44)- 请求地址:/cies/user/list
+2020-12-09 11:12:59,558 INFO (SysLogAspect.java:48)- 功能描述:获取用户列表
+2020-12-09 11:12:59,558 INFO (SysLogAspect.java:52)- 请求参数:[{"page":"1","limit":"10"}]
+2020-12-09 11:12:59,568 INFO (SysLogAspect.java:61)- 返回参数:{msg=success, code=1, data=com.ec.cies.utils.PageUtils@5a0993ed}
+2020-12-09 11:12:59,568 INFO (SysLogAspect.java:65)- <---------End(10ms)--------->
+2020-12-09 11:17:57,751 INFO (ExecutorConfigurationSupport.java:218)- Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-09 11:17:57,756 INFO (DruidDataSource.java:1823)- {dataSource-1} closed

@@ -313,3 +313,56 @@
 2020-12-09 11:07:25,070 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM role LIMIT ?,? 
 2020-12-09 11:07:25,071 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
 2020-12-09 11:07:25,072 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-12-09 11:11:48,455 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user WHERE user_id=? 
+2020-12-09 11:11:48,473 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 135(String)
+2020-12-09 11:11:48,493 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-12-09 11:11:49,093 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT( 1 ) FROM role WHERE (role_name = ?) 
+2020-12-09 11:11:49,094 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: (String)
+2020-12-09 11:11:49,096 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-12-09 11:11:49,098 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO role ( role_name, role_desc, role_type ) VALUES ( ?, ?, ? ) 
+2020-12-09 11:11:49,099 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: (String), 123(String), 1,2,11,12,3,13,14,4,15,16,5,17,18,6,19,20,7,21,22,8,23,24,9,25,26,10,27,28(String)
+2020-12-09 11:11:49,103 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-12-09 11:11:49,136 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user WHERE user_id=? 
+2020-12-09 11:11:49,137 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 135(String)
+2020-12-09 11:11:49,138 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-12-09 11:11:49,167 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM role 
+2020-12-09 11:11:49,168 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-09 11:11:49,176 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM role LIMIT ?,? 
+2020-12-09 11:11:49,177 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-09 11:11:49,179 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-12-09 11:12:50,144 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user WHERE user_id=? 
+2020-12-09 11:12:50,144 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 135(String)
+2020-12-09 11:12:50,145 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-12-09 11:12:50,154 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM user 
+2020-12-09 11:12:50,155 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-09 11:12:50,159 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT user_id,user_name,role_name,user_right FROM user LIMIT ?,? 
+2020-12-09 11:12:50,160 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-09 11:12:50,162 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-12-09 11:12:50,633 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user WHERE user_id=? 
+2020-12-09 11:12:50,633 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 135(String)
+2020-12-09 11:12:50,635 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-12-09 11:12:50,640 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM role 
+2020-12-09 11:12:50,641 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-09 11:12:50,645 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM role LIMIT ?,? 
+2020-12-09 11:12:50,646 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-09 11:12:50,649 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-12-09 11:12:59,515 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user WHERE user_id=? 
+2020-12-09 11:12:59,516 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 135(String)
+2020-12-09 11:12:59,517 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-12-09 11:12:59,524 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT( 1 ) FROM user WHERE (user_name = ?) 
+2020-12-09 11:12:59,525 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 大师傅士大夫(String)
+2020-12-09 11:12:59,527 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-12-09 11:12:59,529 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM role WHERE (role_name = ?) 
+2020-12-09 11:12:59,529 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 12314314(String)
+2020-12-09 11:12:59,531 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-12-09 11:12:59,533 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO user ( user_name, role_name, user_pwd, user_right ) VALUES ( ?, ?, ?, ? ) 
+2020-12-09 11:12:59,534 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 大师傅士大夫(String), 12314314(String), 202cb962ac59075b964b07152d234b70(String), 1,2,11,12,3,13,14,4,15,16,5,17,18,6,19,20,7,21,22,8,23,24,9,25,26,10,27,28(String)
+2020-12-09 11:12:59,538 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-12-09 11:12:59,552 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user WHERE user_id=? 
+2020-12-09 11:12:59,553 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 135(String)
+2020-12-09 11:12:59,555 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-12-09 11:12:59,559 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM user 
+2020-12-09 11:12:59,560 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-09 11:12:59,564 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT user_id,user_name,role_name,user_right FROM user LIMIT ?,? 
+2020-12-09 11:12:59,564 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-09 11:12:59,567 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
