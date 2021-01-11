@@ -99,5 +99,6 @@
     <!--打印sql至sqlFile文件日志-->
     <logger name="mybatis-sql" level="DEBUG" additivity="false">
         <appender-ref ref="sqlFile" />
+        <appender-ref ref="console" />
     </logger>
 </configuration>

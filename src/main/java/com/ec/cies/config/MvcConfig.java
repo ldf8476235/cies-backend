@@ -17,6 +17,9 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 @Configuration
 public class MvcConfig implements WebMvcConfigurer {
@@ -33,8 +36,12 @@ public class MvcConfig implements WebMvcConfigurer {
             .maxAge(3600);
     }
 
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(tokenVerify).addPathPatterns("/**").excludePathPatterns("/login");
-    }
+//    @Override
+//    public void addInterceptors(InterceptorRegistry registry) {
+//        List<String> list = new ArrayList<>();
+//        list.add("/device/**");
+//        list.add("/user/**");
+//        list.add("/role/**");
+//        registry.addInterceptor(tokenVerify).addPathPatterns(list);
+//    }
 }

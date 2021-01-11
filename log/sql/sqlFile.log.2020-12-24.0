@@ -1,0 +1,107 @@
+2020-12-24 09:47:55,638 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM device 
+2020-12-24 09:47:55,649 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-24 09:47:55,685 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM device LIMIT ?,? 
+2020-12-24 09:47:55,687 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-24 09:47:55,691 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-12-24 13:57:52,171 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM cases 
+2020-12-24 13:57:52,200 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-24 13:57:52,289 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM cases LIMIT ?,? 
+2020-12-24 13:57:52,291 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-24 13:57:52,362 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-12-24 13:57:54,826 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM cases 
+2020-12-24 13:57:54,826 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-24 13:57:54,828 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM cases LIMIT ?,? 
+2020-12-24 13:57:54,829 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-24 13:57:54,831 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-12-24 14:02:18,808 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM device 
+2020-12-24 14:02:18,809 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-24 14:02:18,811 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM device LIMIT ?,? 
+2020-12-24 14:02:18,812 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-24 14:02:18,814 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-12-24 15:32:04,872 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM cases 
+2020-12-24 15:32:04,889 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-24 15:32:04,927 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM cases LIMIT ?,? 
+2020-12-24 15:32:04,928 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-24 15:32:04,942 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-12-24 16:01:58,430 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM device 
+2020-12-24 16:01:58,456 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-24 16:01:58,480 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM device LIMIT ?,? 
+2020-12-24 16:01:58,481 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-24 16:01:58,488 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-12-24 16:02:38,963 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT( 1 ) FROM task WHERE (task_name = ?) 
+2020-12-24 16:02:38,964 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: string(String)
+2020-12-24 16:02:38,966 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-12-24 16:02:38,970 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO task ( task_name, task_project, task_assign, task_version, task_desc, create_time, task_case ) VALUES ( ?, ?, ?, ?, ?, ?, ? ) 
+2020-12-24 16:02:38,993 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: string(String), string(String), string(String), string(String), string(String), 2020-12-24 16:02:38.967(Timestamp), [{}](String)
+2020-12-24 16:02:38,999 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-12-24 16:03:06,848 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT( 1 ) FROM task WHERE (task_name = ?) 
+2020-12-24 16:03:06,848 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: string(String)
+2020-12-24 16:03:06,849 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-12-24 16:03:15,815 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT( 1 ) FROM task WHERE (task_name = ?) 
+2020-12-24 16:03:15,815 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: strin1g(String)
+2020-12-24 16:03:15,817 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-12-24 16:03:15,818 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO task ( task_name, task_project, task_assign, task_version, task_desc, create_time, task_case ) VALUES ( ?, ?, ?, ?, ?, ?, ? ) 
+2020-12-24 16:03:15,818 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: strin1g(String), string(String), string(String), string(String), string(String), 2020-12-24 16:03:15.817(Timestamp), [{"editLoop":false,"actionName":"节点名称2","actionType":"screen","loopTimes":10,"errorDispose":"123","overtime":"asdasd","executeWait":"aq2134","selectFlag":false},{"editLoop":false,"actionName":"name2","actionType":"screen2","loopTimes":0,"errorDispose":"123","overtime":"asdasd","executeWait":"aq2134","selectFlag":false},{"editLoop":false,"actionName":"name1","actionType":"screen1","loopTimes":0,"errorDispose":"123","overtime":"asdasd","executeWait":"aq2134","selectFlag":false}](String)
+2020-12-24 16:03:15,821 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-12-24 16:03:31,105 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: DELETE FROM task WHERE task_id=? 
+2020-12-24 16:03:31,106 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Long)
+2020-12-24 16:03:31,109 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-12-24 16:03:41,103 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE task SET task_name=?, task_project=?, task_assign=?, task_version=?, task_desc=?, task_case=? WHERE task_id=? 
+2020-12-24 16:03:41,104 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: string(String), string(String), string(String), string(String), string(String), [{}](String), 2(Long)
+2020-12-24 16:03:41,107 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-12-24 16:04:16,561 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE task SET task_name=?, task_project=?, task_assign=?, task_version=?, task_desc=?, task_case=? WHERE task_id=? 
+2020-12-24 16:04:16,562 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: string(String), string(String), string(String), string(String), string(String), [{"editLoop":false,"actionName":"节点名称2","actionType":"screen","loopTimes":10,"errorDispose":"123","overtime":"asdasd","executeWait":"aq2134","selectFlag":false},{"editLoop":false,"actionName":"name2","actionType":"screen2","loopTimes":0,"errorDispose":"123","overtime":"asdasd","executeWait":"aq2134","selectFlag":false},{"editLoop":false,"actionName":"name1","actionType":"screen1","loopTimes":0,"errorDispose":"123","overtime":"asdasd","executeWait":"aq2134","selectFlag":false}](String), 2(Long)
+2020-12-24 16:04:16,565 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-12-24 16:04:38,221 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM task 
+2020-12-24 16:04:38,221 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-24 16:04:38,224 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM task LIMIT ?,? 
+2020-12-24 16:04:38,224 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-24 16:04:39,163 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM task 
+2020-12-24 16:04:39,164 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-24 16:04:39,168 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM task LIMIT ?,? 
+2020-12-24 16:04:39,168 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-24 16:04:54,112 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM task 
+2020-12-24 16:04:54,113 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-24 16:04:54,116 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM task LIMIT ?,? 
+2020-12-24 16:04:54,117 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-24 16:07:57,998 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM task 
+2020-12-24 16:07:57,999 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-24 16:07:58,002 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM task LIMIT ?,? 
+2020-12-24 16:07:58,004 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-24 16:08:50,161 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM task 
+2020-12-24 16:08:50,162 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-24 16:08:50,167 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM task LIMIT ?,? 
+2020-12-24 16:08:50,169 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-24 16:09:47,981 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM task 
+2020-12-24 16:09:47,982 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-24 16:09:47,985 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM task LIMIT ?,? 
+2020-12-24 16:09:47,986 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-24 16:10:50,729 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM task 
+2020-12-24 16:10:50,731 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-24 16:10:50,737 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM task LIMIT ?,? 
+2020-12-24 16:10:50,738 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-24 16:10:50,773 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-12-24 16:15:06,485 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM device 
+2020-12-24 16:15:06,507 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-24 16:15:06,534 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM device LIMIT ?,? 
+2020-12-24 16:15:06,536 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-24 16:15:06,540 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-12-24 16:15:13,010 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT( 1 ) FROM task WHERE (task_name = ?) 
+2020-12-24 16:15:13,012 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: string(String)
+2020-12-24 16:15:13,013 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-12-24 16:15:13,018 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO task ( task_name, task_project, task_status, task_progress, task_assign, task_version, task_desc, create_time, task_case ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-12-24 16:15:13,040 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: string(String), string(String), string(String), 0(Integer), string(String), string(String), string(String), 2020-12-24 16:15:13.014(Timestamp), [{}](String)
+2020-12-24 16:15:13,042 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-12-24 16:15:37,816 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT( 1 ) FROM task WHERE (task_name = ?) 
+2020-12-24 16:15:37,817 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: string1(String)
+2020-12-24 16:15:37,818 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-12-24 16:15:37,820 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO task ( task_name, task_project, task_status, task_progress, task_assign, task_version, task_desc, create_time, task_case ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-12-24 16:15:37,822 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: string1(String), string(String), string(String), 0(Integer), string(String), string(String), string(String), 2020-12-24 16:15:37.819(Timestamp), [{"editLoop":false,"actionName":"节点名称2","actionType":"screen","loopTimes":10,"errorDispose":"123","overtime":"asdasd","executeWait":"aq2134","selectFlag":false},{"editLoop":false,"actionName":"name2","actionType":"screen2","loopTimes":0,"errorDispose":"123","overtime":"asdasd","executeWait":"aq2134","selectFlag":false},{"editLoop":false,"actionName":"name1","actionType":"screen1","loopTimes":0,"errorDispose":"123","overtime":"asdasd","executeWait":"aq2134","selectFlag":false}](String)
+2020-12-24 16:15:37,824 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-12-24 16:16:49,703 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM task WHERE (params LIKE ?) 
+2020-12-24 16:16:49,721 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: %page=10%(String)
+2020-12-24 16:22:13,484 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM task 
+2020-12-24 16:22:13,484 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-24 16:22:13,506 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM task LIMIT ?,? 
+2020-12-24 16:22:13,508 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-24 16:22:13,556 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2

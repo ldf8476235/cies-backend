@@ -1,0 +1,257 @@
+2021-01-08 11:19:29,124 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT( 1 ) FROM action WHERE (action_name = ?) 
+2021-01-08 11:19:29,149 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: qqq(String)
+2021-01-08 11:19:29,204 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2021-01-08 11:19:29,215 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO action ( action_name, action_type, action_project, action_version, action_timeout, create_time, update_time, action_desc, action_corpus, action_data ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-01-08 11:19:29,247 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: qqq(String), 2(Integer), 选项1(String), 12(String), 123(Integer), 2021-01-08 11:19:29.207(Timestamp), 2021-01-08 11:19:29.207(Timestamp), 123(String), 选项2(String), [{"voiceName":"节点名称1","executeWait":"aq2134"},{"voiceName":"节点名称2","executeWait":"aq2134"}](String)
+2021-01-08 11:19:29,264 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2021-01-08 11:19:29,409 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 11:19:29,410 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 11:19:29,425 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 11:19:29,426 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 11:19:29,452 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2021-01-08 11:20:31,864 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT( 1 ) FROM action WHERE (action_name = ?) 
+2021-01-08 11:20:31,865 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: aaa(String)
+2021-01-08 11:20:31,866 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2021-01-08 11:20:31,868 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO action ( action_name, action_type, action_project, action_version, action_timeout, create_time, update_time, action_desc, action_corpus, action_data ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-01-08 11:20:31,869 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: aaa(String), 1(Integer), 选项2(String), 123(String), 123(Integer), 2021-01-08 11:20:31.867(Timestamp), 2021-01-08 11:20:31.867(Timestamp), 121(String), 选项2(String), [{"voiceName":"节点名称1","executeWait":"aq2134"},{"voiceName":"节点名称2","executeWait":"aq2134"}](String)
+2021-01-08 11:20:31,871 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2021-01-08 11:20:31,939 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 11:20:31,939 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 11:20:31,942 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 11:20:31,943 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 11:20:31,947 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2021-01-08 11:22:10,051 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 11:22:10,052 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 11:22:10,053 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 11:22:10,054 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 11:22:10,056 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2021-01-08 11:22:29,584 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 11:22:29,584 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 11:22:29,587 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 11:22:29,587 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 11:22:29,589 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2021-01-08 14:29:37,664 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM device 
+2021-01-08 14:29:37,678 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:29:37,776 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM device LIMIT ?,? 
+2021-01-08 14:29:37,777 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:29:37,784 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2021-01-08 14:29:40,548 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 14:29:40,549 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:29:40,551 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 14:29:40,552 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:29:40,558 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2021-01-08 14:44:03,603 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 14:44:03,605 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:44:03,608 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 14:44:03,609 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:44:03,612 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2021-01-08 14:44:44,003 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 14:44:44,003 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:44:44,006 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 14:44:44,007 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:44:44,009 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2021-01-08 14:44:48,275 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 14:44:48,275 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:44:48,277 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 14:44:48,278 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:44:48,280 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2021-01-08 14:44:54,801 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 14:44:54,802 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:44:54,803 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 14:44:54,803 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:44:54,805 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2021-01-08 14:44:58,274 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 14:44:58,274 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:44:58,276 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 14:44:58,277 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:44:58,279 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2021-01-08 14:45:35,979 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 14:45:35,980 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:45:35,982 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 14:45:35,983 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:45:35,986 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2021-01-08 14:46:15,897 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 14:46:15,898 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:46:15,900 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 14:46:15,901 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:46:15,904 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2021-01-08 14:46:52,923 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 14:46:52,923 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:46:52,926 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 14:46:52,927 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:46:52,930 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2021-01-08 14:47:10,071 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 14:47:10,072 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:47:10,073 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 14:47:10,073 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:47:10,076 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2021-01-08 14:47:14,591 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 14:47:14,591 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:47:14,594 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 14:47:14,595 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:47:14,597 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2021-01-08 14:47:29,025 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 14:47:29,025 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:47:29,027 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 14:47:29,028 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:47:29,030 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2021-01-08 14:47:30,627 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 14:47:30,627 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:47:30,629 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 14:47:30,630 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:47:30,631 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2021-01-08 14:48:12,279 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM task 
+2021-01-08 14:48:12,279 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:48:12,283 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM task LIMIT ?,? 
+2021-01-08 14:48:12,283 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:48:12,287 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10
+2021-01-08 14:48:12,358 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 14:48:12,358 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:48:12,361 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 14:48:12,361 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:48:12,363 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2021-01-08 14:53:23,821 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 14:53:23,821 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:53:23,824 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 14:53:23,824 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:53:23,826 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2021-01-08 14:55:14,623 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 14:55:14,624 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:55:14,626 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 14:55:14,626 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:55:14,628 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2021-01-08 14:57:29,613 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT( 1 ) FROM action WHERE (action_name = ?) 
+2021-01-08 14:57:29,615 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 阿萨(String)
+2021-01-08 14:57:29,617 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2021-01-08 14:57:29,621 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO action ( action_name, action_type, action_project, action_version, action_timeout, create_time, update_time, action_desc, action_script, action_data ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-01-08 14:57:29,628 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 阿萨(String), 0(Integer), 选项5(String), 12(String), 12(Integer), 2021-01-08 14:57:29.617(Timestamp), 2021-01-08 14:57:29.617(Timestamp), 123123(String), d.widget.click("00032#钱包")(String), [{"index":0,"text":"钱包","resourceId":"","_type":"android.widget.TextView","package":"com.oppo.launcher","description":"","checkable":false,"clickable":true,"enabled":true,"focusable":true,"focused":false,"scrollable":false,"longClickable":true,"password":false,"selected":false,"rect":{"x":48,"y":136,"width":246,"height":290},"_id":"2b9fa5fa-6456-45e4-aafe-fc384ee374f8","_parentId":"2d804d63-f4dd-46b9-9381-5905d99f4f02","action":"tap widget"}](String)
+2021-01-08 14:57:29,635 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2021-01-08 14:57:30,206 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 14:57:30,207 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:57:30,208 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 14:57:30,209 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:57:30,211 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10
+2021-01-08 14:57:58,357 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 14:57:58,357 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:57:58,360 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 14:57:58,360 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:57:58,361 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10
+2021-01-08 14:58:32,482 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 14:58:32,482 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 14:58:32,484 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 14:58:32,485 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 14:58:32,487 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10
+2021-01-08 15:02:24,226 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE action SET action_name=?, action_type=?, action_project=?, action_version=?, action_timeout=?, create_time=?, update_time=?, action_desc=?, action_script=?, action_cite=?, action_data=? WHERE action_id=? 
+2021-01-08 15:02:24,229 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 阿萨请求(String), 0(Integer), 选项5(String), 12(String), 12(Integer), 2021-01-08 14:57:30.0(Timestamp), 2021-01-08 15:02:24.209(Timestamp), 123123(String), (String), null, [](String), 12(Long)
+2021-01-08 15:02:24,239 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2021-01-08 15:02:24,322 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:02:24,323 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:02:24,325 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:02:24,325 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 15:02:24,327 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10
+2021-01-08 15:06:19,301 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT( 1 ) FROM action WHERE (action_name = ?) 
+2021-01-08 15:06:19,302 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 驱蚊器(String)
+2021-01-08 15:06:19,303 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2021-01-08 15:06:19,305 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: INSERT INTO action ( action_name, action_type, action_project, action_version, action_timeout, create_time, update_time, action_desc, action_script ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-01-08 15:06:19,305 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 驱蚊器(String), 2(Integer), 选项2(String), 123(String), 12(Integer), 2021-01-08 15:06:19.303(Timestamp), 2021-01-08 15:06:19.303(Timestamp), 123(String), asda  ↵asd↵ad↵ad↵adq
+asdad azxxc
+zxcad
+zxc
+awe
+(String)
+2021-01-08 15:06:19,308 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2021-01-08 15:06:19,382 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:06:19,383 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:06:19,385 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:06:19,385 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 15:06:19,387 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10
+2021-01-08 15:07:43,084 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:07:43,085 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:07:43,087 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:07:43,087 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 15:07:43,089 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10
+2021-01-08 15:08:57,725 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:08:57,725 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:08:57,727 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:08:57,727 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 15:08:57,731 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10
+2021-01-08 15:09:21,265 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:09:21,265 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:09:21,266 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:09:21,267 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 15:09:21,268 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10
+2021-01-08 15:09:30,266 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:09:30,266 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:09:30,268 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:09:30,269 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 10(Long), 10(Long)
+2021-01-08 15:09:30,270 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2021-01-08 15:09:31,489 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:09:31,490 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:09:31,491 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:09:31,491 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 15:09:31,493 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10
+2021-01-08 15:09:35,610 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:09:35,611 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:09:35,612 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:09:35,613 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 20(Long)
+2021-01-08 15:09:35,615 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 11
+2021-01-08 15:10:29,897 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:10:29,897 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:10:29,899 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:10:29,899 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 15:10:29,902 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10
+2021-01-08 15:10:56,648 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:10:56,648 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:10:56,650 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:10:56,650 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 15:10:56,652 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10
+2021-01-08 15:11:00,163 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:11:00,163 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:11:00,165 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:11:00,166 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 20(Long)
+2021-01-08 15:11:00,167 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 11
+2021-01-08 15:11:15,164 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:11:15,165 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:11:15,167 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:11:15,167 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 15:11:15,169 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10
+2021-01-08 15:11:17,629 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:11:17,629 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:11:17,631 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:11:17,631 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 20(Long)
+2021-01-08 15:11:17,633 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 11
+2021-01-08 15:12:43,114 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:12:43,114 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:12:43,116 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:12:43,116 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 15:12:43,118 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10
+2021-01-08 15:12:45,693 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:12:45,694 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:12:45,696 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:12:45,696 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 20(Long)
+2021-01-08 15:12:45,698 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 11
+2021-01-08 15:12:57,639 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:12:57,640 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:12:57,642 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:12:57,642 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 15:12:57,644 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10
+2021-01-08 15:13:00,056 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:13:00,057 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:13:00,059 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:13:00,059 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 20(Long)
+2021-01-08 15:13:00,060 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 11
+2021-01-08 15:13:02,826 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:13:02,826 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:13:02,828 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:13:02,828 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 15:13:02,829 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10
+2021-01-08 15:15:52,323 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:15:52,323 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:15:52,325 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:15:52,325 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 15:15:52,327 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10
+2021-01-08 15:17:06,570 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM action 
+2021-01-08 15:17:06,570 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-08 15:17:06,572 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM action LIMIT ?,? 
+2021-01-08 15:17:06,573 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-08 15:17:06,575 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10

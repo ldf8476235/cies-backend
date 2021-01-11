@@ -40,8 +40,20 @@ public class LoginController {
         }
         logger.info("用户("+user.getUserName()+")已登录");
         String token = tokenService.getToken(user);
+        user.setUserStatus(1);
+        user.setUserToken(token);
+        userService.updateById(user);
         user.setUserPwd(null);
         return R.ok().put("user",user).put("token",token);
     }
 
+    @GetMapping("logout/{id}")
+    public R logout(@PathVariable("id") Long id){
+        User user = userService.getById(id);
+//        user.setUserToken(null);
+        user.setUserStatus(0);
+        userService.updateById(user);
+        logger.info("用户("+user.getUserName()+")已退出");
+        return R.ok();
+    }
 }

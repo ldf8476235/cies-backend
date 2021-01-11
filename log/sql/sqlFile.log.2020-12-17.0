@@ -1,0 +1,95 @@
+2020-12-17 09:55:48,299 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM device 
+2020-12-17 09:55:48,325 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-17 09:55:48,421 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM device LIMIT ?,? 
+2020-12-17 09:55:48,423 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-17 09:55:48,433 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-12-17 09:55:57,431 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM cases 
+2020-12-17 09:55:57,432 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-17 09:55:57,441 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM cases LIMIT ?,? 
+2020-12-17 09:55:57,441 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-17 09:55:57,497 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-12-17 09:56:05,840 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM cases 
+2020-12-17 09:56:05,840 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-17 09:56:05,844 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM cases LIMIT ?,? 
+2020-12-17 09:56:05,845 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-17 09:56:05,849 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-12-17 09:56:09,748 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM device 
+2020-12-17 09:56:09,749 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-17 09:56:09,754 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM device LIMIT ?,? 
+2020-12-17 09:56:09,754 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-17 09:56:09,757 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-12-17 09:56:10,636 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM device 
+2020-12-17 09:56:10,637 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-17 09:56:10,645 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM device LIMIT ?,? 
+2020-12-17 09:56:10,645 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-17 09:56:10,647 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-12-17 09:56:12,279 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM device 
+2020-12-17 09:56:12,280 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-17 09:56:12,282 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM device LIMIT ?,? 
+2020-12-17 09:56:12,282 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-17 09:56:12,285 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-12-17 09:56:14,230 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM device 
+2020-12-17 09:56:14,230 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-17 09:56:14,233 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM device LIMIT ?,? 
+2020-12-17 09:56:14,234 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-17 09:56:14,235 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-12-17 10:32:29,602 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM device 
+2020-12-17 10:32:29,604 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-17 10:32:29,609 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM device LIMIT ?,? 
+2020-12-17 10:32:29,612 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-17 10:32:29,615 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-12-17 10:32:31,613 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM cases 
+2020-12-17 10:32:31,614 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-17 10:32:31,617 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM cases LIMIT ?,? 
+2020-12-17 10:32:31,618 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-17 10:32:31,620 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-12-17 10:32:34,381 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM device 
+2020-12-17 10:32:34,382 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-17 10:32:34,384 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM device LIMIT ?,? 
+2020-12-17 10:32:34,385 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-17 10:32:34,386 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-12-17 10:32:35,237 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM role 
+2020-12-17 10:32:35,237 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-17 10:32:35,248 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM role LIMIT ?,? 
+2020-12-17 10:32:35,249 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-17 10:32:35,251 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-12-17 10:32:37,595 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM user 
+2020-12-17 10:32:37,596 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-17 10:32:37,604 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT user_id,user_name,role_name,user_right,user_status,user_token FROM user LIMIT ?,? 
+2020-12-17 10:32:37,605 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-17 10:32:37,608 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-12-17 10:32:38,076 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM role 
+2020-12-17 10:32:38,077 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-17 10:32:38,079 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM role LIMIT ?,? 
+2020-12-17 10:32:38,080 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-17 10:32:38,081 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-12-17 10:32:42,362 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM cases 
+2020-12-17 10:32:42,363 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-17 10:32:42,365 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM cases LIMIT ?,? 
+2020-12-17 10:32:42,366 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-17 10:32:42,369 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-12-17 10:32:45,165 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM device 
+2020-12-17 10:32:45,166 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-17 10:32:45,168 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM device LIMIT ?,? 
+2020-12-17 10:32:45,169 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-17 10:32:45,170 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-12-17 13:37:55,806 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM device 
+2020-12-17 13:37:55,829 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-17 13:37:55,869 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM device LIMIT ?,? 
+2020-12-17 13:37:55,870 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-17 13:37:55,876 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-12-17 13:37:59,985 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM device 
+2020-12-17 13:37:59,985 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-17 13:37:59,988 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM device LIMIT ?,? 
+2020-12-17 13:37:59,988 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-17 13:37:59,990 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-12-17 13:41:37,752 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM device 
+2020-12-17 13:41:37,753 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-17 13:41:37,755 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM device LIMIT ?,? 
+2020-12-17 13:41:37,755 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-17 13:41:37,757 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-12-17 13:41:38,307 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM cases 
+2020-12-17 13:41:38,308 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-12-17 13:41:38,311 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM cases LIMIT ?,? 
+2020-12-17 13:41:38,311 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2020-12-17 13:41:38,367 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4

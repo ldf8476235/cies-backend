@@ -10,5 +10,4 @@ import java.util.Map;
 
 public interface DeviceService extends IService<Device> {
     PageUtils queryPage(Map<String, Object> params);
-
 }

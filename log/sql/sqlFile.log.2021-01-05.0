@@ -1,0 +1,20 @@
+2021-01-05 09:55:52,171 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM cases 
+2021-01-05 09:55:52,205 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-05 09:55:52,316 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM cases LIMIT ?,? 
+2021-01-05 09:55:52,319 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-05 09:55:52,375 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2021-01-05 09:55:53,944 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM role 
+2021-01-05 09:55:53,944 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-05 09:55:53,953 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM role LIMIT ?,? 
+2021-01-05 09:55:53,955 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-05 09:55:53,957 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2021-01-05 15:42:28,013 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM task 
+2021-01-05 15:42:28,042 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-05 15:42:28,123 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM task LIMIT ?,? 
+2021-01-05 15:42:28,124 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-05 15:42:28,152 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10
+2021-01-05 16:12:45,146 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(1) FROM task 
+2021-01-05 16:12:45,147 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2021-01-05 16:12:45,150 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM task LIMIT ?,? 
+2021-01-05 16:12:45,150 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Long), 10(Long)
+2021-01-05 16:12:45,160 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 10

@@ -1,0 +1,47 @@
+2021-01-10 19:21:16,947 INFO (StartupInfoLogger.java:55)- Starting CiesApplication on WIN-HO76JP8GO6J with PID 16648 (D:\softwore\code\cies\target\classes started by Administrator in D:\softwore\code\cies)
+2021-01-10 19:21:16,955 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-01-10 19:21:21,099 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2021-01-10 19:21:21,122 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2021-01-10 19:21:21,124 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2021-01-10 19:21:21,125 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-01-10 19:21:21,349 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2021-01-10 19:21:21,360 INFO (ServletWebServerApplicationContext.java:285)- Root WebApplicationContext: initialization completed in 4186 ms
+2021-01-10 19:21:21,944 INFO (DruidDataSourceAutoConfigure.java:56)- Init DruidDataSource
+2021-01-10 19:21:24,033 INFO (DruidDataSource.java:928)- {dataSource-1} inited
+2021-01-10 19:21:25,742 WARN (TableInfoHelper.java:296)- Warn: Could not find @TableId in Class: com.ec.cies.pojo.Test.
+2021-01-10 19:21:26,194 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-10 19:21:26,292 INFO (ExecutorConfigurationSupport.java:181)- Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-10 19:21:26,560 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2021-01-10 19:21:26,592 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/cies'
+2021-01-10 19:21:26,594 INFO (DocumentationPluginsBootstrapper.java:147)- Context refreshed
+2021-01-10 19:21:26,616 INFO (DocumentationPluginsBootstrapper.java:150)- Found 1 custom documentation plugin(s)
+2021-01-10 19:21:26,658 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2021-01-10 19:21:26,946 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: batchDeleteUsingPOST_1
+2021-01-10 19:21:26,952 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: deleteUsingDELETE_1
+2021-01-10 19:21:26,958 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_1
+2021-01-10 19:21:26,967 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_1
+2021-01-10 19:21:26,972 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_1
+2021-01-10 19:21:26,978 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: batchDeleteUsingPOST_2
+2021-01-10 19:21:26,984 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: deleteUsingDELETE_2
+2021-01-10 19:21:26,988 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_2
+2021-01-10 19:21:26,995 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_2
+2021-01-10 19:21:26,999 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_2
+2021-01-10 19:21:27,004 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: batchDeleteUsingPOST_3
+2021-01-10 19:21:27,009 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: deleteUsingDELETE_3
+2021-01-10 19:21:27,013 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_3
+2021-01-10 19:21:27,019 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_3
+2021-01-10 19:21:27,024 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_3
+2021-01-10 19:21:27,031 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: batchDeleteUsingPOST_4
+2021-01-10 19:21:27,036 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: deleteUsingDELETE_4
+2021-01-10 19:21:27,040 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_4
+2021-01-10 19:21:27,048 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_4
+2021-01-10 19:21:27,053 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_4
+2021-01-10 19:21:27,059 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: batchDeleteUsingPOST_5
+2021-01-10 19:21:27,063 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: deleteUsingDELETE_5
+2021-01-10 19:21:27,067 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_5
+2021-01-10 19:21:27,076 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_5
+2021-01-10 19:21:27,081 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_5
+2021-01-10 19:21:27,109 INFO (StartupInfoLogger.java:61)- Started CiesApplication in 11.815 seconds (JVM running for 20.52)
+2021-01-10 19:22:46,587 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-10 19:22:46,587 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2021-01-10 19:22:46,598 INFO (FrameworkServlet.java:547)- Completed initialization in 11 ms

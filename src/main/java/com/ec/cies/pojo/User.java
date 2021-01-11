@@ -25,4 +25,8 @@ public class User {
     @TableField(typeHandler = LongListTypeHandler.class)
     private List<Long> userRight;
 
+    private int userStatus;
+
+    private String userToken;
+
 }

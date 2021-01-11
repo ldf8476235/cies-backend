@@ -44,6 +44,9 @@ public class TokenVerify implements HandlerInterceptor {
         if (user == null) {
             throw new RRException("用户被删除,请重新登录",3);
         }
+        if (!user.getUserToken().equals(token)) {
+            throw new RRException("token已失效,请重新登录",3);
+        }
         // 验证 token
         JWTVerifier jwtVerifier = JWT.require(Algorithm.HMAC256(user.getUserPwd())).build();
         try {

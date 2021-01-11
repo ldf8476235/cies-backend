@@ -18,8 +18,8 @@ import org.springframework.stereotype.Component;
 import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
 
-@Aspect
-@Component
+//@Aspect
+//@Component
 public class SysLogAspect {
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
